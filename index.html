@@ -1,421 +1,501 @@
 <!DOCTYPE html>
-<html>
-<title>Nepal Trekking Company</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Dosis|Roboto+Condensed" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Omnifood is a fictitious premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible.">
+	<link rel="stylesheet" type="text/css" href="vendors/css/node_modules/normalize.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+	<title>Manish Basnet</title>
+</head>
 <body>
+	
+	<!-- Heading section -->
 
-<!-- header -->
+	<header>
+		<nav>
+			<div class="row"> <!-- Keep within 1140px width -->
+<!--				<img src="resources/img/logo-white.png" alt="Omnifood Logo" class="logo">-->
+<!--				<img src="resources/img/logo.png" alt="Omnifood Logo" class="logo-black">-->
+				<ul class="main-nav js--main-nav">  
+                    <li><a href="index.html">Home</a></li>
+					<li><a href="#features">About me</a></li>
+					<li><a href="#works">my projects</a></li>
+					<li><a href="#cities">Blog</a></li>
+					<li><a href="#plans">contact</a></li>
+				</ul>
+				<a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a> <!-- No href -->
+			</div>
+		</nav>
+		<div class="hero-text">
+			<h1>Hi, I'm Manish<br></h1>
+			<a class="btn btn-full js--scroll-to-plans" href="#">Contact Me</a>
+			<a class="btn btn-ghost js--scroll-to-start" href="#">About Me</a>
+		</div>
+	</header>
+	
+	<!-- Features section -->
+	
+	<section class="features js--features" id="features"> <!-- Use for sticky nav activation --> 
+		<div class="row">
+			<h2>Lorem ipsum dolor &mdash; consectetur adipiscing</h2> <!-- Longer dash + only use one h1, so using h2 -->
+			<p class="long-copy">
+				Sed diam magna, volutpat posuere risus at, sagittis interdum risus. Curabitur gravida sapien purus, sed rutrum elit euismod tincidunt. In laoreet semper lorem a imperdiet. Vestibulum libero lectus, sollicitudin ac sapien ultrices, aliquam maximus lectus. 
+			</p>
+		</div>
+		<!-- Grid using col -->
+	<!--	<div class="row js--wp-1">
+			<div class="col span-1-of-4 box">
+				 Adding icons 
+				<i class="ion-ios-calendar-outline icon-big"></i>
+				<h3>Up to 365 days/year</h3>
+				<p>Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.</p>
+			</div>
+			<div class="col span-1-of-4 box">
+				<i class="ion-ios-stopwatch-outline icon-big"></i>
+				<h3>Ready in 20 minutes</h3>
+				<p>You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.</p>
+			</div>
+			<div class="col span-1-of-4 box">
+				<i class="ion-ios-nutrition-outline icon-big"></i>
+				<h3>100% organic</h3>
+				<p>All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!</p>
+			</div>
+			<div class="col span-1-of-4 box">
+				<i class="ion-ios-cart-outline icon-big"></i>
+				<h3>Order anything</h3>
+				<p>We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!</p>
+			</div>
+		</div>-->
+	</section>
+	
+	<!-- Meals section -->
+<!--
+	<section class="meals">
+		<!-- First row showcase meals -->
+	<!--	<ul class="meals-showcase clearfix"> <!-- Clears it's child li element's floats -->
+		<!--	<li>
+				<!-- Contains an image or caption for an image, also use figcaption -->
+			<!--	<figure class="meal-photo">
+					<img src="resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
+				</figure>
+			</li>
+			<li>
+				<figure class="meal-photo">
+					<img src="resources/img/2.jpg" alt="Simple italian pizza with cherry tomatoes">
+				</figure>
+			</li>
+			<li>
+				<figure class="meal-photo">
+					<img src="resources/img/3.jpg" alt="Chicken breast steak with vegetables">
+				</figure>
+			</li>
+			<li>
+				<figure class="meal-photo">
+					<img src="resources/img/4.jpg" alt="Autumn pumpkin soup">
+				</figure>
+			</li>
+		</ul>
+     
+		<!-- Second row showcase meals -->
+	<!--	<ul class="meals-showcase clearfix">
+			<li>
+				<figure class="meal-photo">
+					<img src="resources/img/5.jpg" alt="Paleo beef steak with vegetables">
+				</figure>
+			</li>
+			<li>
+				<figure class="meal-photo">
+					<img src="resources/img/6.jpg" alt="Healthy baguette with egg and vegetables">
+				</figure>
+			</li>
+			<li>
+				<figure class="meal-photo">
+					<img src="resources/img/7.jpg" alt="Burger with cheddar and bacon">
+				</figure>
+			</li>
+			<li>
+				<figure class="meal-photo">
+					<img src="resources/img/8.jpg" alt="Granola with cherries and strawberries">
+				</figure>
+			</li>
+		</ul>
+	</section>
+	
+	<!-- How it works section -->
 
-<header>
-    <div class="bar">
-      
-        <ul class="social-icons">
-          <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-          <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-          <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-          <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-        </ul>
-      
-      
-
-          <div class="home">
-    <ul>
-    <li><a href="#">> Home</li></a>
-    <li><a href="#">> FAQ</li></a>
-    <li><a href="#">> About Us</li></a>
- 
-    </ul>
-    </div>
-
-    </div>
-  </header>
-
-
-  <!-- main logo -->
-
-  <div class="logobar">
-<div class="logoimg">
-  <img src="img/crown-earth.png">
-</div>
-<div class="title_company">
-<div class="companyname"> 
-<h1>CROWN EARTH</h1></div>
-<div class="subtitle">
-<p><b>Treks & Expeditions Pvt. Ltd.</b></p>
-</div> 
-</div>
-
-
-<!-- info -->
-
-<div class="info">
-
-<ul>
-    <li><div class="callus">
-    <div class="works-steps">
-<i class="ion-ios-telephone"></i>
-
+	<section class="steps" id="works">
+		<div class="row">
+			<h2>My Projects  </h2>
+		</div>
+		<!--<div class="row">  col for iphone, col for steps, all in same row 
+			<div class="col span-1-of-2 steps-box">
+				<img src="resources/img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen js--wp-2">
+			</div>
+			<div class="col span-1-of-2 steps-box">
+				<div class="works-steps">
+					<div>1</div>
+					<p>Choose the subscription plan that best fits your needs and sign up today.</p>
+				</div>
+				<div class="works-steps">
+					<div>2</div>
+					<p>Order your delicious meal using our mobile app or website. Or you can even call us!</p>
+				</div>
+				<div class="works-steps">
+					<div>3</div>
+					<p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
+				</div>
+				<a href="#" class="btn-app">
+					<img src="resources/img/download-app.svg" alt="App store">
+				</a>
+				<a href="#" class="btn-app">
+					<img src="resources/img/download-app-android.png" alt="Google play store">
+				</a>
+			</div>
+		</div>-->
         
-    </div>
-  <div class="call_font" >     
-<p>
-<b>CALL US</b><br>
-
-977-14380677
-    </p>
-    </div>
-    </div></li>
-
-    <li><div class="callus">
-    <div class="works-steps">
-<div><i class="ion-email"></i>
-
-        </div>
-    </div>
-  <div class="call_font" >     
-<p><b>EMAIL US</b>
-<br>
-info@crownearthtreks.com
-    </p>
-    </div>
-    </div>
-    </li>
- 
-    </ul>
-</div>
-</div>
-
-<!-- main menu bar -->
-<div class="Main_menu">
-<div class="menu">
-<ul>
- <li><a href="#">Home</a></li>
-<li><a href="#">Company</a>
-<li><a href="#">Trekking in Nepal</a></li>
-<li><a href="#">Destinations</a></li>
-<li><a href="#">Day Hours</a></li>
-<li><a href="#">Contact Us</a></li>
-    </ul>
-    </div>
-</div>
-
-<!-- slider -->
-
-
-<!-- <div class="w3-container">
-  <h2>Slideshow Caption</h2>
-  <p>Add a caption text for each image slide with the w3-display-* classes (topleft, topmiddle, topright, bottomleft, bottommiddle, bottomright or middle).</p>
-</div> -->
-<div class="slider">
-<div class="w3-content w3-display-container">
-
-<div class="w3-display-container mySlides">
-  <img src="img/banner1.jpg" style="width:100%">
-  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
- 
-  </div>
-</div>
-
-<div class="w3-display-container mySlides">
-  <img src="img/banner3.jpg" style="width:100%">
-  <div class="w3-display-bottomright w3-large w3-container w3-padding-16">
-  
-  </div>
-</div>
-
-<div class="w3-display-container mySlides">
-  <img src="img/banner4.jpg" style="width:100%">
-  <div class="w3-display-topleft w3-large w3-container w3-padding-16">
-
-  </div>
-</div>
-
-<div class="w3-display-container mySlides">
-  <img src="img/banner1.jpg" style="width:100%">
-  <div class="w3-display-topright w3-large w3-container w3-padding-16">
-   
-  </div>
-</div>
-
-<div class="w3-display-container mySlides">
-  <img src="img/banner3.jpg" style="width:100%">
-  <div class="w3-display-middle w3-large w3-container w3-padding-16">
-      </div>
-</div>
-
-<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
-
-</div>
-</div>
-<!-- Features -->
-    
-
-<div class="center">
-    <div class="container">
-        <div class="about">
-            <h1>Featured Holiday Packages In Nepal</h1>
-        </div>
-
-        <div class="intro">
-            <p>This section is inclusive of the most significant of all adventure trekking holiday packages in Nepal. These holiday trips, showcased under this category, are less frequented by trekkers, have unsoiled culture and religion, and are as pristine as it can be and showcases beautiful mountains. If you are in search of the best trekking company in Nepal and for adventure trips which are new and not staple, you may want to browse packages under this category. For no hassle booking and a quiet holiday in the Himalayas, browse adventure holiday packages here!</p>
-        </div>
-
-    </div>
-    
-    <!--frame photo-->
-    <div class="main-frame">
-<div class="frame1">
-    <div class="img-1">
-        <img src="img/ghorepani-poonhill-trek.jpg" class="img-responsive">
-        <div class="ghorepani">
-            <a href="#">Ghorepani Poon Hill Trek
-        </a><p>Annapurna base camp trek was soon opened after the Annapurna circuit trek in the 1980’s and since then it has... </p>
-            <div class="button"><a class="btn btn-ghost js--scroll-to-start" href="#">READ MORE</a> </div></div>
-    </div>
-    
-    </div> 
-    
-<div class="frame2">
-    <div class="img-2">
-        <img src="img/annapurna-base-camp-treks.jpg" class="img-responsive">
-        <div class="annapurna">
-        <a href="#">Everest View Trek</a>
-            <p>Everest view trek is a short trek in the Khumbu region that will not fail to mesmerize you in every... </p>
-         <div class="button"><a class="btn btn-ghost js--scroll-to-start" href="#">READ MORE</a> </div>
-        </div>
-    </div>
-    </div> 
-</div>
-    
-    
-<!--second row frame-->
-
- <div class="main-frame2">
-<div class="frame3">
-    <div class="img-3">
-        <img src="img/ghorepani-poonhill-trek.jpg" class="img-responsive">
-        <div class="ghorepani">
-            <a href="#">Ghorepani Poon Hill Trek
-        </a><p>Annapurna base camp trek was soon opened after the Annapurna circuit trek in the 1980’s and since then it has... </p>
-            <div class="button1"><a class="btn btn-ghost js--scroll-to-start" href="#">READ MORE</a> </div></div>
-    </div>
-    
-    </div> 
-    
-<div class="frame4">
-    <div class="img-4">
-        <img src="img/annapurna-base-camp-treks.jpg" class="img-responsive">
-        <div class="annapurna">
-        <a href="#">Everest View Trek</a>
-            <p>Everest view trek is a short trek in the Khumbu region that will not fail to mesmerize you in every... </p>
-         <div class="button1"><a class="btn btn-ghost js--scroll-to-start" href="#">READ MORE</a> </div>
-        </div>
-    </div>
-    </div> 
-     
-     
-<div class="frame4">
-    <div class="img-4">
-        <img src="img/annapurna-base-camp-treks.jpg" class="img-responsive">
-        <div class="annapurna">
-        <a href="#">Everest View Trek</a>
-            <p>Everest view trek is a short trek in the Khumbu region that will not fail to mesmerize you in every... </p>
-         <div class="button1"><a class="btn btn-ghost js--scroll-to-start" href="#">READ MORE</a> </div>
-        </div>
-    </div>
-    </div> 
-     
-    
-</div>
-    
-<!--    Third Frame -->
-    
-    
-    
-    <div class="main-frame3">
-<div class="frame5">
-    <div class="img-5">
-        <img src="img/ghorepani-poonhill-trek.jpg" class="img-responsive">
-        <div class="ghorepani">
-            <a href="#">Ghorepani Poon Hill Trek
-        </a><p>Annapurna base camp trek was soon opened after the Annapurna circuit trek in the 1980’s and since then it has... </p>
-            <div class="button1"><a class="btn btn-ghost js--scroll-to-start" href="#">READ MORE</a> </div></div>
-    </div>
-    
-    </div> 
-    
-<div class="frame6">
-    <div class="img-6">
-        <img src="img/annapurna-base-camp-treks.jpg" class="img-responsive">
-        <div class="annapurna">
-        <a href="#">Everest View Trek</a>
-            <p>Everest view trek is a short trek in the Khumbu region that will not fail to mesmerize you in every... </p>
-         <div class="button1"><a class="btn btn-ghost js--scroll-to-start" href="#">Read more</a> </div>
-        </div>
-    </div>
-<!--      <div class="button2"><a class="btn btn-ghost js--scroll-to-start" href="#">CREATE YOUR TRIP NOW!</a> </div>-->
-    <div class="button2"><a href="#" class="button_trip">CREATE YOUR TRIP NOW!</a></div>
-    </div> 
+<!--        my projects-->
         
-     
-     
-<div class="frame6">
-    <div class="img-6">
-        <img src="img/annapurna-base-camp-treks.jpg" class="img-responsive">
-        <div class="annapurna">
-        <a href="#">Everest View Trek</a>
-            <p>Everest view trek is a short trek in the Khumbu region that will not fail to mesmerize you in every... </p>
-         <div class="button1"><a class="btn btn-ghost js--scroll-to-start" href="#">READ MORE</a> </div>
-        </div>
-    </div>
-  
-    </div> 
-     
-  
-</div>
-       
- </div> 
-
-<!--Holiday Package-->
-<div class="holiday_package">
-<div class="holidayinfo">
-    <h1>Best Selling Holiday Packages</h1>
-    <p>There are several destinations, plenty of holiday style and several adventure trekking packages that could easily confuse you on<br> where to venture as next adventure holiday in Nepal. However, for your convenience and ease, we have come up with few best<br> selling holidays in Nepal that comprises of adventure, culture, village life and irresistible mountains. Choose from the following<br> holidays and save time!</p>
-    </div>
-     <div class="holidayimg2">
-        <img src="img/everest-base-camp-trekking.jpg" width="450px" height="335px" class="img-responsive">
-    </div>
-         <div class="holidayimg">
-         <img src="img/annapurna-base-camp-treks.jpg" class="img-responsive">
-        </div>
-    
-  
-    </div>
-
-<!--Incomplete-->
-<div class="aboutus">
-<div class="welcome">
-    
-        <p>WELCOME</p><br>
-        <div class="heading1"><h1>ABOUT US</h1>
-        </div>
-    </div>
-    <div class="nepal">
-    <img src="img/Nepal.jpg" width="400px;">
-        <div class="leftinfo">
-    <p>Crown earth trek, one of the best trekking company has combined the<br> experience of around 20 plus years in adventures holiday activities,<br>inbound tours and short treks in Nepal.<br>
-
-We are committed to show sights that most tourists fail to see having<br> travelled on your own or with any other random trekking companies in<br> Nepal. We take you to off the beaten trail to beat the influx as well as to <br>show you the unexplored 123 ethnic communities, cultures, languages<br> and their way of life. In these years we have ventured to every corner of<br> Nepal, from the rural most Dolpa to the lowest part in Terai in order to<br> show you the most beautiful aspect of the country.</p>
-</div>    
-     <div class="button3"><a href="#" class="button_trip2">READ MORE</a></div>
-    </div>
-<!--    Right part  -->
-    <div class="texthero2">
-        <div>
-<p>ANY CONFUSION</p>
-        <div class="heading3"> <h3>GET HELP FROM FAQS</h3></div>
-    </div>
-        <div class="footer_menu">
-            <ul>
-            <li><a href="#">+  How can I get in Nepal?</a></li>
-            <li><a href="#">+  Is Nepal safe for Female travellers ?</a></li>
-            <li><a href="#">+  When is the best season to be in Nepal ?</a></li>
-            <li><a href="#">+  What are few things to do in Nepal ?</a></li>
-            <li><a href="#">+  Can I trek even if I have never trekked before ?</a></li>
-            <li><a href="#">+  What can I eat in Nepal ?</a></li>
-        </ul>
-        </div>
-    </div>
-</div>
-<!--footer-->
-
-<img id="footerimg" src="img/footercrownearth.png" class="img-responsive">
-<div class="footer">
-    <div class="first">
-    <h5>&mdash;&nbsp;&nbsp;Associated With</h5><br>
-        <img src="img/nma.png">
-        <img src="img/npl.png">
-        <img src="img/keep.png">
-        <img src="img/ntb.png"><br>
-        <img src="img/taan.png"><br><br><br>
-         <h5>&mdash;&nbsp;&nbsp;Trip Advisor</h5>
-        <img src="img/trip.png" width="80px;">
-    </div>
-        <div class="second">
-        <h5>&mdash;&nbsp;&nbsp;Company</h5>
-            <div class="second_menu">
-            <ul>
-                <li><a href="#">>&nbsp;&nbsp;About us</a></li>
-                <li><a href="#">>&nbsp;&nbsp;Why Us</a></li>
-                <li><a href="#">>&nbsp;&nbsp;FAQs</a></li>
-                <li><a href="#">>&nbsp;&nbsp;Terms & Conditions</a></li>
-                <li><a href="#">>&nbsp;&nbsp;Booking</a></li>
-                <li><a href="#">>&nbsp;&nbsp;Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    <div class="popular_packages">
-        <h5>&mdash;&nbsp;&nbsp;Popular Packages</h5>
-            <div class="popular_packages1">
-            <ul>
-                <li><a href="#">>&nbsp;&nbsp;Everest Gokyo Trek</a></li>
-                <li><a href="#">>&nbsp;&nbsp;Everest View Trek</a></li>
-                <li><a href="#">>&nbsp;&nbsp;Annapurna Base Camp Trek</a></li>
-                <li><a href="#">>&nbsp;&nbsp;Terms & Conditions</a></li>
-                <li><a href="#">>&nbsp;&nbsp;Everest 3 Passes Trek</a></li>
-                <li><a href="#">>&nbsp;&nbsp;Jiri to EBC Trek</a></li>
-            </ul>
-        </div>
         
-          <div class="popular_package2">
-                <ul>
-                    <li><a href="#">>&nbsp;&nbsp;Gosainkunda Trek</a></li>
-                    <li><a href="#">>&nbsp;&nbsp;Langtang Trek</a></li>
-                    <li><a href="#">>&nbsp;&nbsp;Tamang Heritage Trek</a></li>
-                    <li><a href="#">>&nbsp;&nbsp;Lower Mustang Trek</a></li>
-                    <li><a href="#">>&nbsp;&nbsp;Khopra Ridge Trek</a></li>
-                    <li><a href="#">>&nbsp;&nbsp;Mardi Himal Trek</a></li>
-                </ul>
-                </div>
-               <div class="contact"> 
-        <div class="contactlist">
-            <h5>&mdash;&nbsp;&nbsp;CONTACT US</h5>
+        
+        
+        <div class="row">
+			<div class="col span-1-of-3">
+				<div class="plan-box js--wp-4">
+					<div> <!-- Monthly price -->
+						<h3>Crown earth trekking website </h3>
+<!--						<p class="plan-price">$399 <span>/ month</span></p>-->
+						<p class="plan-meal"><img src="resources/img/crown.png" class="img-thumbnail" width="255" height="236">Nullam rutrum bibendum libero eget tincidunt.</p>
+					</div>
+<!--
+					<div>  Check marks 
+						<ul>
+							<li>
+								<i class="ion-ios-checkmark-empty icon-small"></i>1 meal everyday.
+							</li>
+							<li>
+								<i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7
+							</li>
+							<li>
+								<i class="ion-ios-checkmark-empty icon-small"></i>Access to newest creations
+							</li>
+							<li>
+								<i class="ion-ios-checkmark-empty icon-small"></i>Free delivery
+							</li>
+						</ul>
+					</div>
+-->
+					<div> <!-- Button Sign up -->
+						<a href="vendors/projects/crownearthtreks/index.html" class="btn btn-ghost">View</a>
+					</div>
+				</div>
+			</div>
+			<div class="col span-1-of-3">
+				<div class="plan-box">
+					<div> <!-- Monthly price -->
+						<h3>Yeti holidays</h3>
+<!--						<p class="plan-price">$149 <span>/ month</span></p>-->
+						<p class="plan-meal"><img src="resources/img/yeti.png" class="img-thumbnail" width="255" height="236">Nullam rutrum bibendum libero eget tincidunt.</p></p>
+					</div>
+<!--
+					<div>  Check marks 
+						<ul>
+							<li>
+								<i class="ion-ios-checkmark-empty icon-small"></i>1 meal 10 days/month.
+							</li>
+							<li>
+								<i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7
+							</li>
+							<li>
+								<i class="ion-ios-checkmark-empty icon-small"></i>Access to newest creations
+							</li>
+							<li>
+								<i class="ion-ios-checkmark-empty icon-small"></i>Free delivery
+							</li>
+						</ul>
+					</div>
+-->
+					<div> <!-- Button Sign up -->
+						<a href="vendors/projects/yetiholidays/index.html" class="btn btn-ghost">View</a>
+					</div>
+				</div>
+			</div>
+			<div class="col span-1-of-3">
+				<div class="plan-box">
+					<div> <!-- Monthly price -->
+						<h3>Business sansar</h3>
+<!--						<p class="plan-price">$19 <span>/ meal</span></p>-->
+						<p class="plan-price-meal">&nbsp;<img src="resources/img/business.png" class="img-thumbnail" width="255" height="236">Nullam rutrum bibendum libero eget tincidunt.</p></p></p> <!-- Add empty space placeholder here -->
+					</div>
+<!--
+					<div>  Check marks 
+						<ul>
+							<li>
+								<i class="ion-ios-checkmark-empty icon-small"></i>1 meal
+							</li>
+							<li>
+								<i class="ion-ios-checkmark-empty icon-small"></i>Order from 8am to 12pm
+							</li>
+							<li>
+								<i class="ion-ios-close-empty icon-small"></i>
+							</li>
+							<li>
+								<i class="ion-ios-checkmark-empty icon-small"></i>Free delivery
+							</li>
+						</ul>
+					</div>
+-->
+					<div> <!-- Button Sign up -->
+						<a href="vendors/projects/business_sansar/class1.html" class="btn btn-ghost">View</a>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        
+        
+        
+        
+        
+        
+        
+	</section>
+	
+	<!-- Cities section-->
 
-               <ul> 
-                    <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Sorakhutte 16, Kathmandu<br>Nepal</a></li>
-                   <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;977-14380677	9841161466</a></li>
-                   <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;info@crownearthtreks.com</a></li>
-                   <li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;sales@crownearthtreks.com</a></li>            
-            </ul>
-    </div>
-        </div>
-    </div>
-</div>
+	<section class="cities" id="cities">
+		<div class="row">
+			<h2>Vivamus nulla ipsum, lobortis</h2>
+		</div>
+<!--
+		<div class="row js--wp-3">
+			<div class="col span-1-of-4 box">
+				<img src="resources/img/lisbon-3.jpg" alt="Lisbon">
+				<h3>Lisbon</h3>
+				<div class="city-features">
+					<i class="ion-ios-person icon-small"></i>
+					1600+ happy eaters!
+				</div>
+				<div class="city-features">
+					<i class="ion-ios-star icon-small"></i>
+					60+ top chefs
+				</div>
+				<div class="city-features">
+					<i class="ion-social-twitter icon-small"></i>
+					<a href="#">@omnifood_lx</a>
+				</div>
+			</div>
+			<div class="col span-1-of-4 box">
+				<img src="resources/img/san-francisco.jpg" alt="San Francisco">
+				<h3>San Francisco</h3>
+				<div class="city-features">
+					<i class="ion-ios-person icon-small"></i>
+					3700+ happy eaters!
+				</div>
+				<div class="city-features">
+					<i class="ion-ios-star icon-small"></i>
+					160+ top chefs
+				</div>
+				<div class="city-features">
+					<i class="ion-social-twitter icon-small"></i>
+					<a href="#">@omnifood_sf</a>
+				</div>
+			</div>
+			<div class="col span-1-of-4 box">
+				<img src="resources/img/berlin.jpg" alt="Berlin">
+				<h3>Berlin</h3>
+				<div class="city-features">
+					<i class="ion-ios-person icon-small"></i>
+					2300+ happy eaters!
+				</div>
+				<div class="city-features">
+					<i class="ion-ios-star icon-small"></i>
+					110+ top chefs
+				</div>
+				<div class="city-features">
+					<i class="ion-social-twitter icon-small"></i>
+					<a href="#">@omnifood_berlin</a>
+				</div>
+			</div>
+			<div class="col span-1-of-4 box">
+				<img src="resources/img/london.jpg" alt="London">
+				<h3>London</h3>
+				<div class="city-features">
+					<i class="ion-ios-person icon-small"></i>
+					1200+ happy eaters!
+				</div>
+				<div class="city-features">
+					<i class="ion-ios-star icon-small"></i>
+					50+ top chefs
+				</div>
+				<div class="city-features">
+					<i class="ion-social-twitter icon-small"></i>
+					<a href="#">@omnifood_london</a>
+				</div>
+			</div>
+		</div>
+-->
+	</section>
 
-<!--last footer-->
+	<!-- Testimonials section -->
 
-<div class="lastfooter">
-      <div class="copyright">
-    <p>© Crown Earth Treks Pvt. Ltd. All Rights Reserved | Web Designed by NWF</p>
-          </div>
-    <div class="footer_icon_container">
-    <ul class="social-icons_footer">
-          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-        </ul>
-        </div>
-    
-</div>
-<script src="script.js"></script>
+	<section class="testimonials">
+<!--
+		<div class="row">
+			<h2>Our customers can't live without us</h2>
+			<div class="row">
+				<div class="col span-1-of-3">
+					<blockquote>
+						Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
+					<cite><img src="resources/img/customer-1.jpg" alt="Alberto Duncan">Alberto Duncan</cite>
+					</blockquote>
+				</div>
+				<div class="col span-1-of-3">
+					<blockquote>
+						Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
+					<cite><img src="resources/img/customer-2.jpg" alt="Joana Silva">Joana Silva</cite>
+					</blockquote>
+				</div>
+				<div class="col span-1-of-3">
+					<blockquote>
+						I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
+					<cite><img src="resources/img/customer-3.jpg" alt="Milton Chapman">Milton Chapman</cite>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+-->
+	</section>
 
+	<!-- Plans section -->
+	
+	<section class="plans js--section-plans" id="plans">
+		<div class="row">
+			<h2>contact</h2>
+		</div>
+		
+	</section>
+
+	<!-- Form section -->
+
+	<div class="map-box">
+
+		<div class="map">
+			
+		</div>
+		<div class="form-box">
+			<div class="row">
+				<h2>I will be happy to hear from you</h2>
+			</div>
+			<div class="row"> <!-- Look up forms/labels/inputs later with scripts -->
+				<form action="#" method="post" class="contact-form">
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="name">Name</label>
+						</div>
+						<div class="col span-2-of-3"> <!-- Google Chrome sees required-->
+							<input type="text" name="name" id="name" placeholder="Your name" class="name" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="email">Email</label>
+						</div>
+						<div class="col span-2-of-3"> <!-- Google Chrome sees required-->
+							<input type="email" name="email" id="email" placeholder="Your email" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="find-us">How did you find me?</label>
+						</div>
+						<div class="col span-2-of-3"> <!-- Google Chrome sees required-->
+							<select name="find-us" id="find-us"> <!-- dropdown -->
+								<option value="Friends" selected>Friends</option>
+								<option value="search-engine">Search Engine</option>
+								<option value="advertisement">Social Media</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>Newsletter</label>
+						</div>
+						<div class="col span-2-of-3"> 
+							<input type="checkbox" name="news" id="news" checked>Yes please!
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>Drop a line</label>
+						</div>
+						<div class="col span-2-of-3"> 
+							<textarea name="message" placeholder="Your Message"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>&nbsp;</label>
+						</div>
+						<div class="col span-2-of-3"> 
+							<input type="submit" value="Send it">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer section -->
+
+	<footer>
+		<div class="row">
+			<div class="col span-1-of-2">
+				<ul class="footer-nav">
+					<li>
+						<a href="#">About us</a>
+					</li>
+					<li>
+						<a href="#">Blog</a>
+					</li>
+					<li>
+						<a href="#">Press</a>
+					</li>
+					<li>
+						<a href="#">iOS App</a>
+					</li>
+					<li>
+						<a href="#">Android App</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col span-1-of-2">
+				<ul class="social-icons">
+					<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+					<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+					<li><a href="#"><i class="ion-social-instagram"></i></a></li>
+					<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<p>Copyright &copy; 2017 by Manish Basnet. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+	<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="vendors/js/jquery.waypoints.min.js"></script>
+	<script src="resources/js/scripts.js"></script> <!-- Sticky nav -->
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script src="vendors/js/gmaps.js"></script>
 </body>
 </html>
