@@ -1,8 +1,5 @@
 $(document).ready(function(){ 
 
-
-  
-
 	/* Add/ Remove Sticky Navigation */ 
 
 	$('.js--features').waypoint(function(direction){
@@ -15,40 +12,33 @@ $(document).ready(function(){
 		offset: '60px;' 
 	});
 
-
-
-
 	/* Scroll to section on click event */
-  
-	$('.js--scroll-to-plans').click(function(){
-		$('html, body').animate({scrollTop: $('.js--section-plans').offset().top}, 1500);
-	});
 
-	$('.js--scroll-to-start').click(function(){
-		$('html, body').animate({scrollTop: $('.js--section-features').offset().top}, 1000);
-	});
+	// $('.js--scroll-to-plans').click(function(){
+	// 	$('html, body').animate({scrollTop: $('.js--section-plans').offset().top}, 1500);
+	// });
 
+	// $('.js--scroll-to-start').click(function(){
+	// 	$('html, body').animate({scrollTop: $('.js--features').offset().top}, 1000);
+	// });
 
-/* CSS Tricks: Smooth Scrolling to elements with ID */
+	/* CSS Tricks: Smooth Scrolling to elements with ID */
 
-	$(function() {
-  		$('a[href*=#]:not([href=#])').click(function() {
-    		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      		var target = $(this.hash);
-      		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	      		if (target.length) {
-	        		$('html,body').animate({
-	         		 scrollTop: target.offset().top
-	        		}, 1000);
-	        		return false;
-	      		}
-   			}
- 		});
-	});
+	// $(function() {
+ //  		$('a[href*=#]:not([href=#])').click(function() {
+ //    		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+ //      		var target = $(this.hash);
+ //      		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	//       		if (target.length) {
+	//         		$('html,body').animate({
+	//          		 scrollTop: target.offset().top
+	//         		}, 1000);
+	//         		return false;
+	//       		}
+ //   			}
+ // 		});
+	// });
 
-
-
-/* Animations on scroll */
 	/* Add Animations on scroll */
 
 	$('.js--wp-1').waypoint(function(direction) {
@@ -71,58 +61,39 @@ $(document).ready(function(){
 	}, {
 		offset: '50%'
 	});
-	
-    
-    /*Mobile nav    */
-    
-    $('.js--nav-icon').click(function(){
-        var nav=$('.js--main-nav');
-        var icon=$('.js--nav-icon i');
-        
-        nav.slideToggle(200);
-        if(icon.hasClass('ion-navicon-round')) {
-            icon.addClass('ion-close-round');
-             icon.removeClass('ion-navicon-round');
-            
-        } else {
-            icon.addClass('ion-navicon-round');
-             icon.removeClass('ion-close-round')
-            
-        }
 
+	/* Mobile Navigation */
+	$('.js--nav-icon').click(function() {
+		var nav = $('.js--main-nav');
+		var icon = $('.js--nav-icon i')
 
-        /* Maps */
+		nav.slideToggle(200);
+		/* switch from hamburger to cross icon */
+		if (icon.hasClass('ion-navicon-round')){
+			icon.addClass('ion-close-round');
+			icon.removeClass('ion-navicon-round');
+		} else {
+			icon.addClass('ion-navicon-round');
+			icon.removeClass('ion-close-round');
+		}
+	});
 
-        new GMaps({
-  div: '.map',
-  lat: -12.043333,
-  lng: -77.028333
-});
-        
-        
-        
-        
-    });
-    
-    
-    
-    
+	/* gmaps.js: Google Maps plugin */
+ 	var map = new GMaps({
+	  div: '.map',
+	  lat: 40.0047528,
+	  lng: -75.0,
+	  zoom: 12
+	});
 
-
-
-
-
-
-
-
-
-
-
-
-	
-   	
-
-	
+	map.addMarker({
+	  lat: 40.0047528,
+	  lng: -75.1180329,
+	  title: 'Philadelphia',
+	  infoWindow: {
+		content: '<p>Our Philadelphia HQ</p>'
+	  }
+	});
 });
 
 	

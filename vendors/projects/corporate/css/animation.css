@@ -7,7 +7,7 @@
 	-o-animation-duration:1.5s;
 }
 
- .container,section {
+ .container {
 	overflow: hidden;
 }
 

@@ -14,6 +14,20 @@ body {
     
 }
 
+.pace-running .entire-content
+{
+
+    opacity: 0;
+
+}
+
+.pace-done .entire-content
+{
+
+    opacity: 1;
+    transition: all 2s ease-in;
+}
+
 h1 {
     
     font-size: 36px;
@@ -124,4 +138,10 @@ ul li{
 {
 
     text-align: center;
+}
+
+.animation
+{
+
+    opacity: 0;
 }
